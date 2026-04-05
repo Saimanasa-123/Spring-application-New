@@ -24,7 +24,7 @@ pipeline {
 
     stage('build and push to docker hub'){
         environment {
-            DOCKERHUB_IMAGE = "saimanasabethu/ultimate-cicd:${BUILD_NUMBER}"
+            DOCKER_IMAGE = "saimanasabethu/ultimate-cicd:${BUILD_NUMBER}"
             REGISTRY_CREDENTIALS = credentials('docker-cred')
 
         }
